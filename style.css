@@ -38,8 +38,8 @@ body {
 
 .instagram-continue {
     display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -127,12 +127,58 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
+.form-email, .form-password {
+  width: 80vw;
+  height: 5vh;
+  margin: .2rem 0;
+  background-color: #fafafa;
+  border: 0.2px solid #A8A8A8;
+}
+
+.form-btn {
+  height: 5vh;
+  margin-top: .7rem;
+  color: #fff;
+  background-color: #b1dffc;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-btn:hover{
+  background-color: #0095f6;
+}
+
+.group span{
+  margin: 1.5rem 0;
+}
+
+.link-facebook{
+  font-weight: bold;
+  color: #385185;
+}
+
+.form-email,
+.form-password,
+.form-btn {
+  width: 20vw;
+  height: 5vh;
+  margin: .2rem 0;
+}
+
 /* media queries */
 
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
         width: 90%;
+    }
+
+    .form-email,
+    .form-password,
+    .form-btn {
+      width: 40vw;
+      height: 5vh;
+      margin: .2rem 0;
     }
 }
 
@@ -152,8 +198,16 @@ body {
     .instagram-continue {
         width: 100%;
     }
-    
+
     .group {
         border: 1px solid transparent;
+    }
+
+    .form-email,
+    .form-password,
+    .form-btn {
+      width: 80vw;
+      height: 5vh;
+      margin: .2rem 0;
     }
 }
